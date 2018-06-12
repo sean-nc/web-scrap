@@ -1,24 +1,13 @@
-# README
+# Web Scraper README.md
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Web scraper for real estate listings from realtor.ca
 
-Things you may want to cover:
+* Ruby on Rails
 
-* Ruby version
+* NokoGiri
 
-* System dependencies
+* HTTParty
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+Single page, simple, practicing web scraping.
+```
