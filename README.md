@@ -1,6 +1,6 @@
 # Web Scraper README.md
 
-#### Web scraper for real estate listings from realtor.ca
+#### Web scraper for NHL player stats from nhl.com
 
 * Ruby on Rails
 

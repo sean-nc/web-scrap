@@ -1,0 +1,42 @@
+<% if @url != nil %>
+
+  <h1><%= @name %></h1>
+
+  <% if @headshot.present? %>
+    <%= image_tag @headshot %>
+  <% end %>
+
+  <p><%= @name %> was born on <%= @birth_date %> in <%= @birth_place %>.</p>
+
+  <h3>Team: <%= @team %></h3>
+  <h3>Number: <%= @number %></h3>
+  <h3>Position: <%= @position %></h3>
+  <h3>Height: <%= @height %></h3>
+  <h3>Weight: <%= @weight %></h3>
+  <h3>Age: <%= @age %> years old</h3>
+  <h3>Shoots: <%= @shoots %></h3>
+
+  <% if @image.present? %>
+    <%= image_tag @image %>
+  <% end %>
+
+<% end %>
+
+  <br>
+  <br>
+  <br>
+
+  <h2>Steps</h2>
+  <ol>
+    <li>Go to <%= link_to "NHL player search", "https://www.nhl.com/player", target: "_blank" %></li>
+    <li>Search for a player</li>
+    <li>Go to the player profile page</li>
+    <li>Copy the URL into the form below</li>
+  </ol>
+
+<%= form_tag(root_path, method: "get") do %>
+  <%= label_tag(:url, "Enter URL:") %>
+  <%= text_field_tag(:url) %>
+
+  <%= submit_tag("Submit") %>
+<% end %>
