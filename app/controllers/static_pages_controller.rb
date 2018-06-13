@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   def home
     @url = params[:url]
 
-    if @url.empty? || @url.nil?
+    if @url.nil? || @url.empty?
       @url = nil
     else
       begin
