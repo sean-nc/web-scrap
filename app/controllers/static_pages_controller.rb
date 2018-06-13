@@ -32,8 +32,10 @@ class StaticPagesController < ApplicationController
 
       rescue HTTParty::Error
         flash.now[:alert] = "Not a valid URL"
+        @url = nil
       rescue StandardError
         flash.now[:alert] = "Not a valid URL"
+        @url = nil
       end
     end
   end
